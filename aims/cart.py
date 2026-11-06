@@ -24,7 +24,7 @@ class Cart:
         return False
 
     def total_cost(self):
-        return sum(item.cost for item in self.items)
+        return sum(item.cost for item in self.items[1:])  # cố ý làm hỏng để thử CI
 
     def print_cart(self):
         if not self.items:
