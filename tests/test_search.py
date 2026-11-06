@@ -18,3 +18,8 @@ class TestSearch(unittest.TestCase):
         items = [DigitalVideoDisc("The Lion King"), DigitalVideoDisc("Star Wars")]
         result = search_by_title(items, "Lion")
         self.assertEqual([dvd.title for dvd in result], ["The Lion King"])
+
+    def test_search_by_title_is_case_insensitive(self):
+        items = [DigitalVideoDisc("The Lion King"), DigitalVideoDisc("Star Wars")]
+        result = search_by_title(items, "lion")
+        self.assertEqual([dvd.title for dvd in result], ["The Lion King"])
