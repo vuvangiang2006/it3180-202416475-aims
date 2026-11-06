@@ -7,6 +7,9 @@ phiên bản theo [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+- `Cart.sort_by_title()` và `Cart.sort_by_cost()` sắp xếp giỏ hàng
+
 ## [1.0.0] - 2026-11-06
 
 Phiên bản ổn định đầu tiên (Lab 04).
