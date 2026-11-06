@@ -9,6 +9,7 @@ phiên bản theo [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 - `Cart.sort_by_title()` và `Cart.sort_by_cost()` sắp xếp giỏ hàng
+- `aims.search.search_by_category()` tìm đĩa theo thể loại
 
 ## [1.0.0] - 2026-11-06
 
