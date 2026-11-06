@@ -34,6 +34,7 @@ class Cart:
         print("Ordered Items:")
         for index, dvd in enumerate(self.items, start=1):
             print(f"{index}. {dvd}")
+        print(f"Number of discs: {len(self.items)}")
         print(f"Total cost: {self.total_cost():.2f} $")
         print("****************************************************")
 

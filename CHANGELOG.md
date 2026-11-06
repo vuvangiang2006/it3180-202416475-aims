@@ -7,6 +7,9 @@ phiên bản theo [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+- `print_cart()` in thêm số đĩa trong giỏ
+
 ## [1.1.0] - 2026-11-06
 
 Bản phát hành Lab 05 (`release/lab05`).
