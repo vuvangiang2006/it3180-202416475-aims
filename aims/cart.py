@@ -12,15 +12,15 @@ class Cart:
             print("The cart is almost full")
             return False
         self.items.append(dvd)
-        print("The disc has been added")
+        print("Đã thêm đĩa vào giỏ hàng")
         return True
 
     def remove_dvd(self, dvd):
         if dvd in self.items:
             self.items.remove(dvd)
-            print("The disc has been removed")
+            print("Đã xóa đĩa khỏi giỏ hàng")
             return True
-        print("The disc is not in the cart")
+        print("Đĩa không có trong giỏ hàng")
         return False
 
     def total_cost(self):
