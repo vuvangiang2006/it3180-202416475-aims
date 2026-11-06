@@ -36,3 +36,9 @@ class Cart:
             print(f"{index}. {dvd}")
         print(f"Total cost: {self.total_cost():.2f} $")
         print("****************************************************")
+
+    def total_cost_with_discount(self, percent):
+        """Tổng tiền sau khi giảm giá percent phần trăm (0–100)."""
+        if not 0 <= percent <= 100:
+            raise ValueError("percent must be between 0 and 100")
+        return self.total_cost() * (100 - percent) / 100
