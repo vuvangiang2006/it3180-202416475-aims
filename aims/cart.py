@@ -12,15 +12,15 @@ class Cart:
             print("The cart is almost full")
             return False
         self.items.append(dvd)
-        print(f"The disc '{dvd.title}' has been added")
+        print(f"Đã thêm đĩa '{dvd.title}' vào giỏ hàng")
         return True
 
     def remove_dvd(self, dvd):
         if dvd in self.items:
             self.items.remove(dvd)
-            print("The disc has been removed")
+            print("Đã xóa đĩa khỏi giỏ hàng")
             return True
-        print("The disc is not in the cart")
+        print("Đĩa không có trong giỏ hàng")
         return False
 
     def total_cost(self):
@@ -36,3 +36,9 @@ class Cart:
             print(f"{index}. {dvd}")
         print(f"Total cost: {self.total_cost():.2f} $")
         print("****************************************************")
+
+    def total_cost_with_discount(self, percent):
+        """Tổng tiền sau khi giảm giá percent phần trăm (0–100)."""
+        if not 0 <= percent <= 100:
+            raise ValueError("percent must be between 0 and 100")
+        return self.total_cost() * (100 - percent) / 100
